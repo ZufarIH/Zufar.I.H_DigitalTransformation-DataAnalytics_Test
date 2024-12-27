@@ -7,3 +7,5 @@
 7. dapat menambahkan dan mengedit data karyawan.
 8. ketik nodemon cron_server.
 9. setelah server cron menyala, buka console log untuk melihat data.
+
+10. Untuk lebih jelasnya, tolong buka Huawei Test_Zufar Irving Haris.pdf
