@@ -56,7 +56,6 @@ app.get('/karyawan2/edit2/:id_karyawan', cont_karyawan.halaman_karyawan_form_edi
 app.post('/karyawan/proses-update-data/:id_karyawan', cont_karyawan.proses_update)
 app.post('/karyawan2/proses-update-data2/:id_karyawan', cont_karyawan.proses_update2)
 
-
 app.listen(3000, ()=>{
     console.log('Server aktif, buka http://localhost:3000')
 })
