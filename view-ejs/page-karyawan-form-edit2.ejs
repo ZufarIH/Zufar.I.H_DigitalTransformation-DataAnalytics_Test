@@ -1,0 +1,43 @@
+<h1>Edit Data Karyawan</h1>
+
+<% if (typeof pesanError !== 'undefined') { %>
+    <span style="color: red;">
+        <%= pesanError[0].path +': '+ pesanError[0].msg +' '+ pesanError[0].value %>
+    </span>
+    <br><br>
+<% } %>
+
+<form action="/karyawan2/proses-update-data2/<%= satukaryawan[0].id %>" method="post">
+
+    <label for="">name</label>
+    <input type="text" name="form_name" value="<%= satukaryawan[0].name %>">
+    <br><br>
+
+    <label for="">position</label>
+    <input type="text" name="form_position" value="<%= satukaryawan[0].position %>">
+    <br><br>
+
+    <label for="">join date</label>
+    <input type="text" name="form_join_date" value="<%= satukaryawan[0].join_date %>">
+    <input type="text" name="form_join_month" value="<%= satukaryawan[0].join_month %>">
+    <input type="text" name="form_join_year" value="<%= satukaryawan[0].join_year %>">
+    <br><br>
+
+    <label for="">release date</label>
+    <input type="text" name="form_release_date" value="<%= satukaryawan[0].release_date %>">
+    <input type="text" name="form_release_month" value="<%= satukaryawan[0].release_month %>">
+    <input type="text" name="form_release_year" value="<%= satukaryawan[0].release_year %>">
+    <br><br>
+
+    <label for="">experience</label>
+    <input type="text" name="form_experience" value="<%= satukaryawan[0].experience %>">
+    <br><br>
+
+    <label for="">salary</label>
+    <input type="text" name="form_salary" value="<%= satukaryawan[0].salary %>">
+    <br><br>
+
+
+    <button type="submit">simpan</button>
+    
+</form>

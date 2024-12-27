@@ -1,0 +1,43 @@
+<h1>Input karyawan baru</h1>
+
+<% if (typeof pesanError !== 'undefined') { %>
+    <span style="color: red;">
+        <%= pesanError[0].path +': '+ pesanError[0].msg +' '+ pesanError[0].value %>
+    </span>
+    <br><br>
+<% } %>
+
+<form action="/karyawan2/proses-insert-data2" method="post">
+
+    <label for="">name</label>
+    <input type="text" name="form_name">
+    <br><br>
+
+    <label for="">position</label>
+    <input type="text" name="form_position">
+    <br><br>
+
+    <label for="">join date</label>
+    <input type="text" name="form_join_date"placeholder="date 00">
+    <input type="text" name="form_join_month"placeholder="month 00">
+    <input type="text" name="form_join_year"placeholder="year 0000">
+    <br><br>
+
+    <label for="">release date</label>
+    <input type="text" name="form_release_date"placeholder="date 00">
+    <input type="text" name="form_release_month"placeholder="month 00">
+    <input type="text" name="form_release_year"placeholder="year 0000">
+    <br><br>
+
+    <label for="">experience</label>
+    <input type="text" name="form_experience">
+    <br><br>
+
+    <label for="">salary</label>
+    <input type="text" name="form_salary">
+    <br><br>
+
+
+    <button type="submit">simpan</button>
+    
+</form>
